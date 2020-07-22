@@ -22,7 +22,7 @@
 //   return true;
 // }
 
-// 2 separate loops reduces it to O(n)
+// Refactored: 2 separate loops reduces it to O(n)
 
 function same(arr1, arr2) {
   if (arr1.length !== arr2.length) {
@@ -31,7 +31,7 @@ function same(arr1, arr2) {
 
   let frequencyCounter1 = {};
   let frequencyCounter2 = {};
-
+  
 
 }
 
