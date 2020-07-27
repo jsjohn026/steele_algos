@@ -37,7 +37,7 @@ function same(arr1, arr2) {
   for (let val of arr2) {
     frequencyCounter2[val] = (frequencyCounter2[val] || 0) + 1
   }
-
+  
   for (let key in frequencyCounter1) {
     if (!(key ** 2 in frequencyCounter2)) {
       return false;
@@ -49,9 +49,8 @@ function same(arr1, arr2) {
   return true;
 }
 
-
-
-console.log(same([1, 2, 3, 2],[9, 1, 4, 4])) // true
-console.log(same([1, 2, 3],[4, 1, 9])) // true
-console.log(same([1, 2, 3],[1, 9])) // false
-console.log(same([1, 2, 1],[4, 4, 1])) // false (must be same frequency)
+console.log(same([1, 2, 3, 2, 5],[9, 1, 4, 4, 11])) // false
+// console.log(same([1, 2, 3, 2],[9, 1, 4, 4])) // true
+// console.log(same([1, 2, 3],[4, 1, 9])) // true
+// console.log(same([1, 2, 3],[1, 9])) // false
+// console.log(same([1, 2, 1],[4, 4, 1])) // false (must be same frequency)
