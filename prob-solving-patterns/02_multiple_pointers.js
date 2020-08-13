@@ -2,8 +2,8 @@
 
 // Naive solution: Time O(n^2) Space O(1)
 function sumZero(arr) {
-  for (let i = 0; i < arr.length; i++) {
-    for (let j = 1 + 1; j < arr.length; j++) {
+  for (let i = 0; i < arr.length; i++) { //sets up a pointer looking at 1 element
+    for (let j = 1 + 1; j < arr.length; j++) { // looks at rest of array
       if (arr[i] + arr[j] === 0) {
         return [arr[i], arr[j]];
       }
